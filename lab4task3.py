@@ -1,3 +1,9 @@
+"""
+matplotlib code got from Lab4 material
+Author: Lab Instructor
+Date: May 12, 2020
+"""
+
 import lab4task1 as t
 import math as m
 import matplotlib.pyplot as pl
