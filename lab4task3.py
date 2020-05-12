@@ -6,17 +6,17 @@ r = 1
 y = []
 x = []
 for k,v in t.word_dict.items():
-	f = m.log(t.count) - 0.6*m.log(r)
-	#print(k, "f:",f, "r:",r)
+	f = m.log(t.count) - 0.8*m.log(r)
 	y.append(f)
 	x.append(r)
 	r += 1
 
+
 pl.clf()
 pl.xscale("log")
 pl.yscale("log")
-pl.title("title string")
-#pl.xlable("log r")
-#pl.ylable("log f")
+pl.title("Zipf's Law")
+pl.xlabel("rank")
+pl.ylabel("log f")
 pl.plot(x, y)
 pl.show()
